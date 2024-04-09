@@ -9,7 +9,9 @@ Purpose: special "projectA" .appx download&install
 
 
 ## Screenshots
-![Screenshot 2](Images/shot2.png)
+
+![Desktop](Images/shot1.png)
+![Mobile](Images/shot2.png)
 
 ## What's new / Status
 - Only main category is goot at now (no filtering).
