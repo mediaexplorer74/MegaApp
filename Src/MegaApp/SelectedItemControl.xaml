@@ -1,0 +1,108 @@
+﻿<UserControl
+    x:Class="MegaApp.SelectedItemControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MegaApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White"
+    >
+    <!--
+    
+    d:DesignHeight="300"
+    d:DesignWidth="400"
+    
+    
+    -->
+
+        <Grid Name="MainPanel" 
+              Margin="2" 
+              Height="140" 
+              Width="120"
+              Background="White"
+                            
+         >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="NarrowLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MainPanel.Width" Value="200" />
+                        <Setter Target="MainPanel.Height" Value="275" />
+                        <Setter Target="HeadlineTextBlock.FontSize" Value="14" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="WideLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="900" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MainPanel.Width" Value="400" />
+                        <Setter Target="MainPanel.Height" Value="400" />
+                        <Setter Target="HeadlineTextBlock.FontSize" Value="18" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups-->
+        
+        <Image Name="MyImage" 
+               Source="{x:Bind MegaItem.Image}" 
+               Width="32"
+               Height="32"
+               />
+        <RelativePanel Grid.Row="1" Margin="10"
+        Background="White"               
+        >
+
+
+            <TextBlock Text="{x:Bind MegaItem.Subhead}" 
+                       Name="Subhead"
+                       RelativePanel.AlignTopWithPanel="True" 
+                       FontSize="8"
+                       TextWrapping="Wrap" 
+                       Foreground="Blue"
+                       
+                       />
+
+            <!--TextBlock Text="{x:Bind MegaItem.DateLine}" 
+                       RelativePanel.Below="HeadlineTextBlock" 
+                       
+                       FontSize="10" /-->
+
+            <TextBlock Text="{x:Bind MegaItem.DateLine}" 
+                       Name="DateLine"
+                       RelativePanel.Below="Subhead" 
+                       FontSize="10" 
+                       Foreground="Blue"
+                       
+                       />
+
+            <TextBlock Text="{x:Bind MegaItem.Headline}"
+                       Name="HeadlineTextBlock"
+                       RelativePanel.Below="DateLine" 
+                       FontSize="12" 
+                       FontWeight="Bold"
+                       TextWrapping="Wrap" 
+                       Margin="0,1,0,1"
+                       Foreground="Green"
+                       
+                       />
+
+
+            <!--TextBlock Text="{x:Bind MegaItem.Headline}"
+                       Name="HeadlineTextBlock"
+                       RelativePanel.AlignBottomWithPanel="True" 
+                       FontSize="14" 
+                       TextWrapping="Wrap" /-->
+        </RelativePanel>
+
+    </Grid>
+</UserControl>
