@@ -34,7 +34,7 @@
                 </VisualState>
                 <VisualState x:Name="WideLayout">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="300" />
+                        <AdaptiveTrigger MinWindowWidth="300" MinWindowHeight="32"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <Setter Target="SearchBox.Visibility" Value="Visible" />
@@ -107,7 +107,7 @@
                      Grid.Row="0"
                      RelativePanel.AlignRightWithPanel="True" 
                      Width="200"
-                     Height="20"
+                     Height="32"
                      Margin="0,0,0,0"
                     
                      />
