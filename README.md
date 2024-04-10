@@ -1,5 +1,5 @@
-# MegaApp remake (4.x for Project Astoria)
-"MEGA APP" is simplest Mega.nz UWP app for Windows Phone 4PDA Lumia fans. 
+# MegaApp 4.x (Project Astoria edition) - projectA branch
+Simplest Mega.nz UWP app for Windows Phone 4PDA Lumia fans. 
 
 Purpose: special "projectA" .appx download&install
 
@@ -11,7 +11,6 @@ Purpose: special "projectA" .appx download&install
 
 
 ## Screenshots
-
 ![Desktop](Images/shot01.png)
 
 ![Mobile](Images/shot02.png)

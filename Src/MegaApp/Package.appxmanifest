@@ -9,7 +9,7 @@
   <Identity
     Name="ME.MegaApp4"
     Publisher="CN=Admin"
-    Version="4.0.0.0" />
+    Version="4.0.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="826a875b-dda8-4344-bba6-7d3a5244087f" PhonePublisherId="a04000a0-3d4f-9df5-0000-03d5d0000004"/>
 
